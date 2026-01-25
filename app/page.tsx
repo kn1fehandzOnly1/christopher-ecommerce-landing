@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Home() {
   const stripeLink = process.env.NEXT_PUBLIC_STRIPE_PAYMENT_LINK;
 
@@ -15,8 +17,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <div className="bg-gray-200 aspect-square rounded-lg flex items-center justify-center">
-                <span className="text-gray-500 text-lg">Product Image</span>
+              <div className="aspect-square rounded-lg overflow-hidden">
+                <Image
+                  src="/product-image.jpg"
+                  alt="Premium Product"
+                  width={500}
+                  height={500}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             <div>
