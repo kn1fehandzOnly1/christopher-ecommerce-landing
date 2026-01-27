@@ -19,7 +19,7 @@ export default function Home() {
             <div>
               <div className="aspect-square rounded-lg overflow-hidden">
                 <Image
-                  src="/product-image.jpg"
+                  src="/product.png"
                   alt="Premium Product"
                   width={500}
                   height={500}
